@@ -1,0 +1,16 @@
+@font-face{
+    src: url(../fonts/NotoSans-Bold.ttf);
+    font-family: 'n700';
+}
+@font-face{
+    src: url(../fonts/NotoSans-BoldItalic.ttf);
+    font-family: 'n600';
+}
+@font-face{
+    src: url(../fonts/NotoSans-Italic.ttf);
+    font-family: 'n300';
+}
+@font-face{
+    src: url(../fonts/NotoSans-Regular.ttf);
+    font-family: 'n400';
+}
