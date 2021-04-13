@@ -37,7 +37,8 @@
     .nav__search {
         background: var(--button);
     }
-    .ps5__img{
+
+    .ps5__img {
         background-color: #fff;
     }
 
@@ -137,9 +138,6 @@
 
 
 /* Nav */
-
-
-
 .nav__nav {
     padding: 18px 0;
 }
@@ -160,7 +158,6 @@
     font-family: var(--f400);
     font-size: 14px;
     line-height: 19px;
-    /* color: #BBBBBB; */
     padding: 15px 261px 16px 10px;
     border-radius: 0px;
     border: 1px solid var(--b);
@@ -249,8 +246,6 @@
     border: 0;
     border-radius: 50%;
     text-align: center;
-
-
 }
 
 .carousel [data-target].active {
