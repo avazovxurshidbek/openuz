@@ -5,27 +5,67 @@
     --f600: 'n600';
     --f400: 'n400';
     --f300: 'n300';
+    --w: #fff;
+    --b: #313131;
+    --bc: #000000;
+    --advbg: #313131;
+    --wbg: #fff;
+    --button: #313131;
+
 }
 
+@media(prefers-color-scheme: dark) {
+    :root {
+        --advbg: #0C0C0C;
+        --wbg: #313131;
+        --b: #fff;
+        --bc: #fff;
+    }
+
+    .buy {
+        border: 1px solid var(--w);
+    }
+
+    .button {
+        border: 1px solid var(--w);
+    }
+
+    .nav__btn {
+        border: 1px solid var(--w);
+    }
+
+    .nav__search {
+        background: var(--button);
+    }
+    .ps5__img{
+        background-color: #fff;
+    }
+
+}
+
+.body {
+    background: var(--wbg);
+}
 
 .title {
-    color: #313131;
+    color: var(--b);
     font-family: 'n700';
     font-size: 48px;
     line-height: 70px;
 }
 
 .button {
-    background: #313131;
+    background: var(--button);
     padding: 12px 28px 13px 28px;
     font-size: 18px;
     line-height: 25px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--w);
     display: inline-block;
     text-decoration: none;
     margin: auto;
     width: max-content;
+
 
 }
 
@@ -39,12 +79,12 @@
 
 .buy {
     font-family: 'n400';
-    background: #313131;
+    background: var(--button);
     padding: 5px 36px;
     font-size: 14px;
     line-height: 19px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--w);
     display: inline-block;
     text-decoration: none;
     opacity: -1;
@@ -56,10 +96,10 @@
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background: #313131;
+    background: var(--advbg);
     font-size: 20px;
     line-height: 70px;
-    color: #FFFFFF;
+    color: var(--w);
     font-family: 'n400';
     text-align: center;
     margin: 20px 0 15px 20px;
@@ -73,7 +113,7 @@
 }
 
 .adv {
-    background: #313131;
+    background: var(--advbg);
 
 }
 
@@ -82,7 +122,7 @@
 }
 
 .adv__menu {
-    color: #fff;
+    color: var(--w);
     font-family: var(--f400);
     font-size: 14px;
     line-height: 17px;
@@ -97,6 +137,9 @@
 
 
 /* Nav */
+
+
+
 .nav__nav {
     padding: 18px 0;
 }
@@ -106,7 +149,8 @@
 }
 
 .nav__logo {
-    padding-right: 143px;
+    margin-right: 143px;
+    max-width: 187px;
 }
 
 .nav__search {
@@ -116,21 +160,21 @@
     font-family: var(--f400);
     font-size: 14px;
     line-height: 19px;
-    color: #BBBBBB;
+    /* color: #BBBBBB; */
     padding: 15px 261px 16px 10px;
     border-radius: 0px;
-    border: 1px solid #313131;
+    border: 1px solid var(--b);
     box-sizing: border-box;
 }
 
 .nav__btn {
     width: 100%;
-    color: white;
-    border: 1px solid #313131;
+    color: var(--w);
+    border: 1px solid var(--b);
     box-sizing: border-box;
     max-width: 190px;
     border-radius: 0;
-    background: #313131;
+    background: var(--button);
     font-family: var(--f400);
     font-size: 14px;
     line-height: 19px;
@@ -148,7 +192,7 @@
 
 .nav__btns {
     width: max-content;
-    color: #313131;
+    color: var(--b);
     font-size: 18px;
     line-height: 24px;
     font-family: 'n400';
@@ -161,14 +205,14 @@
 }
 
 .nav__btns:hover {
-    color: #313131;
+    color: var(--b);
 }
 
 .nav__btns::after {
     content: '';
     width: 0;
     height: 2px;
-    background: #313131;
+    background: var(--b);
     position: absolute;
     bottom: -3px;
     transition: 500ms;
@@ -210,7 +254,7 @@
 }
 
 .carousel [data-target].active {
-    background: #313131;
+    background: var(--b);
     width: 15px;
     height: 15px;
 }
@@ -240,10 +284,12 @@
 
 .main__inner {
     position: relative;
+    background: #F4F4F4;
 
 }
 
 .grid__info {
+    filter: drop-shadow(-10px 5px 4px rgba(0, 0, 0, 0.25));
     position: absolute;
     width: 100%;
     height: 100%;
@@ -302,7 +348,7 @@
     font-family: 'n700';
     font-size: 36px;
     line-height: 49px;
-    color: #313131;
+    color: var(--b);
     margin: 70px 0 30px 0;
 }
 
@@ -310,6 +356,7 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 30px;
+
 
 }
 
@@ -326,7 +373,7 @@
     font-size: 16px;
     line-height: 22px;
     text-align: center;
-    color: #313131;
+    color: var(--b);
     margin: 194px 0 5px 0;
 }
 
@@ -335,7 +382,7 @@
     font-size: 14px;
     line-height: 19px;
     text-align: center;
-    color: #313131;
+    color: var(--b);
     margin: 0 0 5px 0;
 }
 
@@ -374,7 +421,7 @@
     font-family: 'n700';
     font-size: 48px;
     line-height: 65px;
-    color: #313131;
+    color: var(--b);
 }
 
 .content__btn {
@@ -407,23 +454,23 @@
 
 .footer__icon {
     font-size: 50px;
-    color: #fff;
+    color: var(--w);
     margin: 25px 25px 0;
 }
 
 .footer__item {
     margin-top: 70px;
-    background: #313131;
+    background: var(--advbg);
     padding-top: 30px;
 
 }
 
 .footer__logo {
-    color: #fff;
+    color: var(--w);
 }
 
 .footer__text {
-    color: #fff;
+    color: var(--w);
     font-family: 'n400';
     font-size: 18px;
     line-height: 25px;
@@ -432,11 +479,11 @@
 }
 
 .footer__search {
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--w);
 }
 
 .footer__btn {
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--w);
 }
 
 .footer__nav {
@@ -447,7 +494,7 @@
 
 .footer__nav-link {
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--w);
     font-family: 'n400';
     font-size: 18px;
     line-height: 25px;
@@ -486,7 +533,7 @@
     font-family: 'n400';
     font-size: 24px;
     line-height: 33px;
-    color: #313131;
+    color: var(--b);
     margin: 0;
 }
 
@@ -519,13 +566,13 @@
 
 
 .page__link:hover {
-    color: #313131;
-    border-right: 2px solid #313131;
+    color: var(--b);
+    border-right: 2px solid var(--b);
 }
 
 .page__next {
     border: 0;
-    color: #313131;
+    color: var(--b);
 }
 
 .page__next:hover {
@@ -561,7 +608,7 @@
 .icon__menu {
     font-size: 7px;
     border-radius: 50%;
-    background: #313131;
+    background: var(--b);
     margin-right: 15px;
 }
 
@@ -571,6 +618,7 @@
     font-family: 'n400';
     font-size: 14px;
     line-height: 25px;
+    color: var(--bc);
 }
 
 .product__title {
@@ -578,7 +626,7 @@
     font-family: 'n700';
     font-size: 24px;
     line-height: 28px;
-    color: #000000;
+    color: var(--bc);
 }
 
 .price__menu {
@@ -586,7 +634,7 @@
     font-family: 'n400';
     font-size: 24px;
     line-height: 28px;
-    color: #000000;
+    color: var(--bc);
 }
 
 .menu__title {
@@ -594,7 +642,7 @@
     font-family: 'n700';
     font-size: 30px;
     line-height: 36px;
-    color: #000000;
+    color: var(--bc);
 }
 
 .img__main {
@@ -618,7 +666,7 @@
     font-size: 48px;
     line-height: 65px;
     text-align: center;
-    color: #313131;
+    color: var(--b);
 }
 
 .menu__text {
@@ -632,10 +680,9 @@
 }
 
 
-
-
-
-
+.nav__logo path {
+    fill: var(--b);
+}
 
 @media(max-width: 1400px) {
     .title__menu {
@@ -796,7 +843,7 @@
     }
 
     .nav__logo {
-        padding-right: 43px;
+        margin-right: 43px;
     }
 
     .silider__img {
@@ -892,7 +939,7 @@
     }
 
     .nav__logo {
-        padding-right: 43px;
+        margin-right: 43px;
     }
 
 }
@@ -1027,8 +1074,8 @@
     }
 
     .nav__logo {
-        max-width: 125px;
-        padding-right: 5px
+        max-width: 100%;
+        margin-right: 5px
     }
 
     .content__btn {
@@ -1050,8 +1097,8 @@
     }
 
     .nav__logo {
-        max-width: 125px;
-        padding-right: 15px
+        max-width: 100%;
+        margin-right: 15px
     }
 
     .nav__nav {
@@ -1089,7 +1136,7 @@
     }
 
     .nav__logo {
-        padding-right: 0px;
+        margin-right: 0px;
     }
 
     .nav__inner {
@@ -1110,7 +1157,7 @@
     }
 
     .nav__logo {
-        padding-right: 0px;
+        margin-right: 0px;
         margin-bottom: 10px;
     }
 }
